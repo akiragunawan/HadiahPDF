@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:id="@+id/gambar"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/gambar"
+        android:id="@+id/web"
+        android:hint="web"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Below"
+        android:layout_below="@+id/web"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/textview1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textview1"
+        android:id="@+id/user"
+        android:hint="Username" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/user"
+        android:id="@+id/pass"
+        android:hint="Password" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/pass"
+        android:id="@+id/conpass"
+        android:hint="Confirm Password" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:background="#00aaFF"
+        android:layout_below="@+id/conpass"
+        android:id="@+id/regbut"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        android:background="#"
+        android:layout_below="@+id/regbut"
+        android:id="@+id/logbut"/>
+</RelativeLayout>
